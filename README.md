@@ -32,6 +32,13 @@ You will adapt the baseline cLSTM model to fit CapyMOA's standard SML paradigm.
 * **Anytime inference**: Inference is produced each time a new feature vector $X_t$ is available, considering the window $X_{t-W+1}, \cdots, X_t$. This is implemented by the method `predict` (it should manage a continuous sliding window with the previous $W-1$ data points).
 * **Periodic training:** Data points are accumulated in mini-batches of size $B$. Whenever a mini-batch is full, a sliding window produces sequences on the mini-batch, and the model is trained. The idea is that each time a couple $(X_t, y_t)$ is available, the method `train` shall be called. This method must add the couple to the buffer; when it contains $B$ couples, it must update the model's weights (given a specified number of epochs), and clear the buffer.
 
+**Hyperparameters**:
+* **Training epochs number on each mini-batch ($E$)**: `10`
+* **Mini-batch size ($B$)**: `128`
+* **Learning rate**: `0.01`
+* **LSTM hidden layer size ($H_{LSTM}$)**: `50`
+* **Window Size ($W$)**: `11`.
+
 ## **2. Implement cPNN**
 You will extend the `cLSTM` into the full `cPNN` ensemble. The model initializes with a single cLSTM column. To trigger the architecture expansion, use the method `add_new_column`.
 
