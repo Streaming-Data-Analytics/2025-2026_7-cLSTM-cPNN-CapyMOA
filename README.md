@@ -1,19 +1,3 @@
-Mi sembra un ottimo lavoro! Hai ripulito benissimo le ambiguità sul *catastrophic forgetting* e il *backward transfer*, restringendo il focus in modo chiaro sull'approccio prequenziale (*anytime inference*). Il testo ora fila liscio, le istruzioni sono molto più dirette e lo studente non avrà dubbi su cosa deve fare.
-
-Ci sono solo alcuni **piccoli refusi di battitura (typos)** e **una frase rimasta a metà** alla fine della sezione *Metrics* ("*You must plot the performance of cLSTM and cPNN on the* "). 
-
-Ho corretto i refusi di battitura (evidenziati di seguito) e completato la frase mancante. Ecco la versione finale pulita e pronta per essere pubblicata:
-
-### Refusi corretti:
-* *"pesercing"* -> **preserving**
-* *"selct and resue"* -> **select and reuse**
-* *"streaiming"* -> **streaming**
-* *"contonuously"* -> **continuously**
-* *"The Target contains represents"* -> **The Target column represents**
-* Frase troncata -> *"You must plot the performance of cLSTM and cPNN on the **provided dataset**."*
-
----
-
 # 2025/2026: (7) Implementing Continuous LSTM and Continuous PNN in CapyMOA
 
 Optional project of the [Streaming Data Analytics](https://emanueledellavalle.org/teaching/streaming-data-analytics-2025-26/) course provided by [Politecnico di Milano](https://www11.ceda.polimi.it/schedaincarico/schedaincarico/controller/scheda_pubblica/SchedaPublic.do?&evn_default=evento&c_classe=837284&__pj0=0&__pj1=36cd41e96fcd065c47b49d18e46e3110).
