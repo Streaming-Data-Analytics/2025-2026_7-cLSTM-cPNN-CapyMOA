@@ -5,7 +5,7 @@ Optional project of the [Streaming Data Analytics](https://emanueledellavalle.or
 Student: **[To be assigned]**
 
 This project focuses on interfacing **Streaming Continual Learning (SCL)** architectures (specifically Continuous LSTM (cLSTM) and Continuous Progressive Neural Networks (cPNN)) as native, single-instance classifiers within the [open-source CapyMOA framework](https://capymoa.org/index.html). 
-______
+
 
 # Background: The Rise of Streaming Continual Learning (SCL)
 When applying Machine Learning to evolving data streams, traditional paradigms face severe obstacles. Currently, two main research areas tackle these challenges, but with complementary and sometimes opposing objectives:
