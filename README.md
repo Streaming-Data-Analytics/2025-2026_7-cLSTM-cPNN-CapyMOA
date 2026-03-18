@@ -38,7 +38,8 @@ You will extend the `cLSTM` into the full `cPNN` ensemble. The model initializes
 ## **3. Evaluation**
 
 ### Datasets
-To evaluate the integration, the project will utilize [this data stream](https://polimi365-my.sharepoint.com/:x:/g/personal/10780444_polimi_it/IQDCgaKx14mVR7zozlZM0yStAaR0ONNRc-_GHGV1z75_Jyg?e=mXeuBp). 
+To evaluate the integration, the project will utilize the Weather data stream. 
+The csv file is available [here](https://polimi365-my.sharepoint.com/:x:/g/personal/10780444_polimi_it/IQDCgaKx14mVR7zozlZM0yStAaR0ONNRc-_GHGV1z75_Jyg?e=mXeuBp), while the complete description is available [here](https://polimi365-my.sharepoint.com/:b:/g/personal/10780444_polimi_it/IQAZ8E8JZMobRpkBEq91srZqATZrL9RkyQN0jeUVscWcD1A?e=HX9tjE). 
 
 It is associated with the weather domain and contains the following features: RH (humidity), T_d (dew point temperature), w_s/w_d (wind speed/direction). Features are already standardized.
 
