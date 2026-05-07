@@ -2,7 +2,7 @@
 
 Optional project of the [Streaming Data Analytics](https://emanueledellavalle.org/teaching/streaming-data-analytics-2025-26/) course provided by [Politecnico di Milano](https://www11.ceda.polimi.it/schedaincarico/schedaincarico/controller/scheda_pubblica/SchedaPublic.do?&evn_default=evento&c_classe=837284&__pj0=0&__pj1=36cd41e96fcd065c47b49d18e46e3110).
 
-Student: **[To be assigned]**
+Student: **Devis Nishku**
 
 This project focuses on interfacing **Streaming Continual Learning (SCL)** architectures (specifically Continuous LSTM (cLSTM) and Continuous Progressive Neural Networks (cPNN)) as native, single-instance classifiers within the [open-source CapyMOA framework](https://capymoa.org/index.html). 
 

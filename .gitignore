@@ -1,2 +1,11 @@
-
 .DS_Store
+.vscode/
+
+# Virtual environment
+.venv/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Dataset
+data/

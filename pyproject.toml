@@ -1,0 +1,14 @@
+[project]
+name = "2025-2026-7-clstm-cpnn-capymoa"
+version = "0.1.0"
+description = "Streaming Data Analytics Politecnico di Milano course optional project about implementing cLSTM and cPNN streaming continual learning architectures as CapyMOA classifiers."
+readme = "README.md"
+requires-python = ">=3.14"
+dependencies = [
+    "capymoa>=0.13.0",
+    "matplotlib>=3.10.9",
+    "numpy>=2.4.4",
+    "pandas>=2.3.3",
+    "scikit-learn>=1.8.0",
+    "torch>=2.11.0",
+]
