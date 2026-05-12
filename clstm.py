@@ -101,7 +101,7 @@ class cLSTM(Classifier):
 
     Training: A tumbling window segments the data stream into mini-batches of size B. Once a mini-batch is full,
     a hopping window of size W slides over the mini-batch producing B-W+1 sequences. The model is then trained on
-    such sequences for E epochs via SGD and cross-entropy loss.
+    such sequences for E epochs via Adam and cross-entropy loss.
 
     Inference: Inference is anytime and per-instance. The architecture is many-to-one, foreach incoming input vector X_t the model maintains a
     sliding window [X_{t-W+1}, ..., X_t] of length W and predicts ŷ_t from the last timestep's output.
@@ -145,7 +145,7 @@ class cLSTM(Classifier):
             many_to_one=True
         )
 
-        self.optimizer = torch.optim.SGD(params=self.model.parameters(), lr=learning_rate)
+        self.optimizer = torch.optim.Adam(params=self.model.parameters(), lr=learning_rate)
         self.criterion = nn.CrossEntropyLoss()
 
         # Sliding inference window [X_{t-W+1}, ..., X_t] used for per-instance prediction
@@ -239,7 +239,7 @@ class cLSTM(Classifier):
 
     def _fit(self):
         """
-        Trains the model on the current mini-batch for E epochs via SGD and cross-entropy loss.
+        Trains the model on the current mini-batch for E epochs via Adam and cross-entropy loss.
         """
         n_sequences = self.B - self.W + 1
 
